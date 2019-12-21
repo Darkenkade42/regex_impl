@@ -1,7 +1,5 @@
-
-SRCS = *.cpp OBJS = *.o CFLAGS = -Weverything LDFLAGS +=
-    -lsfml - graphics - lsfml - window - lsfml - system CC =
-        g++
-
-        regex : $(OBJS) $(CC) $(SRS) -
-                o $ @$(LDFLAGS)
+SRCS=*.cpp
+OBJS=*.o
+CFLAGS=-Weverything
+LDFLAGS+=-lsfml -lsfmlgraphics -lsfmlwindow -lsfmlsystem
+CC=g++ regex : $(OBJS) $(CC) $(SRCS) - o $@ $(LDFLAGS)
